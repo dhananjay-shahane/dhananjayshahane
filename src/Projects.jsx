@@ -3,7 +3,7 @@ import restaurantWebsiteImage from './assets/img/restaurant-website.png';
 import fitnessWebsiteImage from './assets/img/Fitness-website.png';
 import BlueRexWebsiteImage from './assets/img/BlueRex-website.png';
 import FoodDahboardWebsiteImage from './assets/img/Food-Dashboard.png';
-import netFlixWebsiteImage from './assets/img/NetFlix-banner.png';
+// import netFlixWebsiteImage from './assets/img/NetFlix-banner.png';
 import colorsWebsiteImage from './assets/img/Colors-website.png';
 
 
@@ -38,13 +38,13 @@ const projects = [
     tags: ['HTML', 'CSS', 'Photoshop to HTML'],
     link: ''
   },
-  {
-    title: 'Netflix Clone',
-    image: netFlixWebsiteImage,
-    description: 'A Netflix clone with a similar user interface, showcasing movies and TV shows. Built using HTML and CSS.',
-    tags: ['HTML', 'CSS'],
-    link: 'https://netflixclone-website.vercel.app'
-  },
+  // {
+  //   title: 'Netflix Clone',
+  //   image: netFlixWebsiteImage,
+  //   description: 'A Netflix clone with a similar user interface, showcasing movies and TV shows. Built using HTML and CSS.',
+  //   tags: ['HTML', 'CSS'],
+  //   link: 'https://netflixclone-website.vercel.app'
+  // },
   {
     title: 'Colors Website',
     image: colorsWebsiteImage,

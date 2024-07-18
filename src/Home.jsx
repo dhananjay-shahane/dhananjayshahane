@@ -1,13 +1,11 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SkillsSection from "./SkillsSection";
 import Projects from "./Projects";
-import BlogSection from "./BlogSection";
 import macbook from './assets/img/macbook.png';
 import restaurantWebsiteImage from './assets/img/restaurant-website.png';
 import fitnessWebsiteImage from './assets/img/Fitness-website.png';
