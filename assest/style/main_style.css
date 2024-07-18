@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+@font-face {
+    font-family: disneyfont;
+    src: url("../Fonts/waltograph42.otf");
+}
+
+.style_header{
+    font-family: disneyfont;
+    font-size: 50px;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
