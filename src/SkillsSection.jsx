@@ -2,20 +2,18 @@ import React from 'react';
 
 const SkillsSection = () => {
   const skills = [
+    { name: 'HTML', src: 'https://cdn.worldvectorlogo.com/logos/html-1.svg' },
     { name: 'CSS', src: 'https://cdn.worldvectorlogo.com/logos/css-3.svg' },
-    { name: 'Tailwind CSS', src: 'https://cdn.worldvectorlogo.com/logos/tailwindcss.svg' },
-    { name: 'Bootstrap 5', src: 'https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg' },
-    { name: 'WordPress', src: 'https://cdn.worldvectorlogo.com/logos/wordpress-icon.svg' },
     { name: 'JavaScript', src: 'https://cdn.worldvectorlogo.com/logos/logo-javascript.svg' },
-    { name: 'React', src: 'https://cdn.worldvectorlogo.com/logos/react-2.svg' },
-    { name: 'Next.js', src: 'https://cdn.worldvectorlogo.com/logos/next-js.svg' },
+    { name: 'Bootstrap 5', src: 'https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg' },
+    { name: 'Beginner React', src: 'https://cdn.worldvectorlogo.com/logos/react-2.svg' },
+    { name: 'Tailwind CSS', src: 'https://cdn.worldvectorlogo.com/logos/tailwindcss.svg' },
+    { name: 'Beginner Node.js', src: 'https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg' },
+    { name: 'Beginner Motion', src: 'https://cdn.worldvectorlogo.com/logos/framer-motion.svg' },
     { name: 'Photoshop To Html', src: 'https://cdn.worldvectorlogo.com/logos/adobe-photoshop-2.svg' },
-    { name: 'Motion', src: 'https://cdn.worldvectorlogo.com/logos/framer-motion.svg' },
+    { name: 'WordPress', src: 'https://cdn.worldvectorlogo.com/logos/wordpress-icon.svg' },
   ];
   
-
-
-
   return (
     <section>
       <div className="container max-w-[1200px] mx-auto flex px-5 py-8 flex-col">

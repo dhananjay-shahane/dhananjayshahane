@@ -11,17 +11,12 @@
 </head>
 
 <body class="relative">
-  <div id="clouds">
-      <div class="cloud" id="cloud-one"></div>
-      <div class="cloud" id="cloud-two"></div>
-      <div class="cloud" id="cloud-three"></div>
-      <div class="cloud" id="cloud-four"></div>
-      <div class="cloud" id="cloud-six"></div>
-  </div>
   <!-- <div class="blob-bg" data-blob-count="1" data-colors='["#8F60BF","#BE28D9","#3FD6C3","#FF7F50","#6495ED","#F08080"]'></div> -->
   <div class="min-w-full w-full">
     <div id="root"></div>
   </div>
+
+
   <script type="module" src="/src/main.jsx"></script>
   <script>
     console.log(
@@ -64,34 +59,34 @@
 
 
     const clouds = [
-            { id: 'cloud-one', start: -300, duration: 3000 },
-            { id: 'cloud-two', start: -800, duration: 3800 },
-            { id: 'cloud-three', start: 800, duration: 6800 },
-            { id: 'cloud-four', start: -530, duration: 6800 },
-            { id: 'cloud-six', start: 830, duration: 9800 }
-        ];
+      { id: 'cloud-one', start: -300, duration: 3000 },
+      { id: 'cloud-two', start: -800, duration: 3800 },
+      { id: 'cloud-three', start: 800, duration: 6800 },
+      { id: 'cloud-four', start: -530, duration: 6800 },
+      { id: 'cloud-six', start: 830, duration: 9800 }
+    ];
 
-        clouds.forEach(cloud => {
-            const element = document.getElementById(cloud.id);
-            const screenWidth = window.innerWidth;
+    clouds.forEach(cloud => {
+      const element = document.getElementById(cloud.id);
+      const screenWidth = window.innerWidth;
 
-            const animateCloud = () => {
-                element.style.marginLeft = `${cloud.start}px`;
-                element.style.transition = 'none';
-                requestAnimationFrame(() => {
-                    requestAnimationFrame(() => {
-                        element.style.transition = `margin-left ${cloud.duration}ms linear`;
-                        element.style.marginLeft = `${screenWidth}px`;
-                    });
-                });
-            };
-
-            element.addEventListener('transitionend', () => {
-                animateCloud();
-            });
-
-            animateCloud();
+      const animateCloud = () => {
+        element.style.marginLeft = `${cloud.start}px`;
+        element.style.transition = 'none';
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            element.style.transition = `margin-left ${cloud.duration}ms linear`;
+            element.style.marginLeft = `${screenWidth}px`;
+          });
         });
+      };
+
+      element.addEventListener('transitionend', () => {
+        animateCloud();
+      });
+
+      animateCloud();
+    });
 
 
 

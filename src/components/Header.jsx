@@ -71,7 +71,7 @@ function Header() {
                         </Link>
                       </li>
                       <li>
-                        <Link className="heading font-bold uppercase" to="/work" onClick={closeMenu}>
+                        <Link className="heading font-bold uppercase" to="/projects" onClick={closeMenu}>
                           Projects
                         </Link>
                       </li>
