@@ -40,7 +40,7 @@ function Header() {
 
   return (
     <>
-      <header className="body-font text-black" style={headerStyle}>
+      <header className="body-font text-black sticky top-0 bg-primary-opacity z-10 border-b-2" style={headerStyle}>
         <nav className="flex justify-between items-center px-6">
           <Link className="logo" to='/' style={logostyle}>
             Dhananjay Shahane <br />
