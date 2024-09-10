@@ -9,22 +9,22 @@ import MyProfile from "../assets/img/me.png";
 
 // project details
 export const projects = [
-    {
-      title: "Restaurant Website",
-      image: restaurantWebsiteImage,
-      description:
-        "A dynamic restaurant website with features like menu browsing, cart management, and online ordering. Built using React JS and Tailwind CSS.",
-      tags: ["React JS", "Tailwind CSS"],
-      link: "https://restaurant-io-eta.vercel.app",
-    },
-    {
-      title: "Food Hunt Dashboard",
-      image: FoodDahboardWebsiteImage,
-      description:
-        "A comprehensive dashboard for managing restaurant operations, including order tracking and analytics. Developed with Tailwind CSS.",
-      tags: ["Tailwind CSS"],
-      link: "https://restaurants-admin-panel.vercel.app",
-    },
+    // {
+    //   title: "Restaurant Website",
+    //   image: restaurantWebsiteImage,
+    //   description:
+    //     "A dynamic restaurant website with features like menu browsing, cart management, and online ordering. Built using React JS and Tailwind CSS.",
+    //   tags: ["React JS", "Tailwind CSS"],
+    //   link: "https://restaurant-io-eta.vercel.app",
+    // },
+    // {
+    //   title: "Food Hunt Dashboard",
+    //   image: FoodDahboardWebsiteImage,
+    //   description:
+    //     "A comprehensive dashboard for managing restaurant operations, including order tracking and analytics. Developed with Tailwind CSS.",
+    //   tags: ["Tailwind CSS"],
+    //   link: "https://restaurants-admin-panel.vercel.app",
+    // },
     {
       title: "Fitness Website",
       image: fitnessWebsiteImage,
