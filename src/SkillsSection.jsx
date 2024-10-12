@@ -1,96 +1,93 @@
 import React from "react";
-import { skills } from "./constant/constant.jsx";
+import { skills } from "./constant/constant.jsx"; // Ensure this file exports an array of skills
+import { motion } from "framer-motion"; // Importing Framer Motion for animations
 
 const SkillsSection = () => {
+  // Split the skills into two rows for demonstration
+  const midIndex = Math.ceil(skills.length / 2);
+  const topRowSkills = skills.slice(0, midIndex);
+  const bottomRowSkills = skills.slice(midIndex);
+
   return (
-    <section className="conatiner mx-auto">
-      <h2 className="text-center text-5xl style_header"><span className="text-secondary  style_header">Techno</span>logies</h2>
-      <div className="text-[26px] text-white my-10">
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
-              {skills.map((skill) => (
-                <div
-                  key={skill.name}
-                  className="flex flex-col items-center sm:justify-start justify-center sm:flex-row sm:align-middle border rounded-md border-transparent px-6 py-4 bg-[#ffffffb0] shadow-sm sm:hover:scale-105 transition-transform"
+    <div className="py-10 md:py-20 lg:py-28">
+      <div className="receptacle max-w-7xl mx-auto p-5">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-12 lg:gap-0">
+        <div className="space-y-5 lg:col-span-8">
+          <h1 className="text-start font-epilogue text-2xl font-bold text-neutral-900 md:text-5xl">
+            Discover My Diverse Skill Set for Creating Tomorrow's Solutions!
+          </h1>
+          <div className="max-w-4xl space-y-5">
+            <p className="text-base font-normal text-neutral-600 md:text-xl">
+              Unlike many freelance software engineers, I approach your project as a distinct opportunity rather than just another task on my list.
+            </p>
+            <p className="text-base font-normal text-neutral-600 md:text-xl">
+              My expertise spans design, management, creative direction, and development. Throughout my projects, I’ve learned that effective workflows, transparent communication, and self-discipline are vital for success. By focusing on these principles, I’ve built a robust work ethic that fuels my success across various domains.
+            </p>
+            <p className="text-base font-normal text-neutral-600 md:text-xl">
+              Unlike conventional IT service agencies, I won’t charge you hefty fees for slow work that is often outsourced to underpaid developers and designers.
+            </p>
+            <p className="text-base font-normal text-neutral-600 md:text-xl">
+              I manage all the work personally and am ready to get involved in every detail. Should I need to collaborate with someone else, I will be open about it. I strive to be a genuine partner, dedicating my full focus to our project together.
+            </p>
+          </div>
+        </div>
+
+          <div className="md:col-span-4">
+            <div className="group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-white p-5 md:min-h-[300px]">
+              <h3 className="font-epilogue text-xl font-bold text-neutral-900 md:text-3xl">
+                Skills
+              </h3>
+              <div className="absolute bottom-0 left-4 right-4 top-10 translate-y-6 rounded-t-2xl bg-gradient-to-br from-primary to-secondary/10 transition-transform duration-300 group-hover:translate-y-3 group-hover:rotate-[-1deg] md:top-20">
+                {/* Top Row Skills */}
+                <motion.div
+                  className="flex flex-wrap justify-center mt-4"
+                  initial={{ x: -100 }} // Start position for the top row
+                  animate={{ x: 0 }}    // End position for the top row
+                  transition={{ duration: 0.5 }}
                 >
-                  <div className="mb-1 sm:mr-4 flex align-middle">
-                    <span
-                      style={{
-                        boxSizing: "border-box",
-                        display: "inline-block",
-                        overflow: "hidden",
-                        width: "initial",
-                        height: "initial",
-                        background: "none",
-                        opacity: 1,
-                        border: 0,
-                        margin: 0,
-                        padding: 0,
-                        position: "relative",
-                        maxWidth: "100%",
-                      }}
+                  {topRowSkills.map((skill, index) => (
+                    <motion.div
+                      key={index}
+                      className="flex items-center justify-center m-2 p-2 border rounded-lg"
+                      whileHover={{ scale: 1.1 }}
                     >
-                      <span
-                        style={{
-                          boxSizing: "border-box",
-                          display: "block",
-                          width: "initial",
-                          height: "initial",
-                          background: "none",
-                          opacity: 1,
-                          border: 0,
-                          margin: 0,
-                          padding: 0,
-                          maxWidth: "100%",
-                        }}
-                      >
-                        <img
-                          alt={skill.name}
-                          aria-hidden="true"
-                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
-                          style={{
-                            display: "block",
-                            maxWidth: "100%",
-                            width: "initial",
-                            height: "initial",
-                            background: "none",
-                            opacity: 1,
-                            border: 0,
-                            margin: 0,
-                            padding: 0,
-                          }}
-                        />
-                      </span>
                       <img
+                        src={skill.logo} // Assuming each skill has a logo property
                         alt={skill.name}
-                        srcSet={`${skill.src} 1x, ${skill.src} 2x`}
-                        src={skill.src}
-                        decoding="async"
-                        style={{
-                          position: "absolute",
-                          inset: 0,
-                          boxSizing: "border-box",
-                          padding: 0,
-                          border: "none",
-                          margin: "auto",
-                          display: "block",
-                          width: 0,
-                          height: 0,
-                          minWidth: "100%",
-                          maxWidth: "100%",
-                          minHeight: "100%",
-                          maxHeight: "100%",
-                        }}
+                        className="h-10 w-10"
                       />
-                    </span>
-                  </div>
-                  <p className="flex align-middle text-xl m-0 p-0 text-gray-600">
-                    {skill.name}
-                  </p>
-                </div>
-              ))}
+                    </motion.div>
+                  ))}
+                </motion.div>
+
+                {/* Bottom Row Skills */}
+                <motion.div
+                  className="flex flex-wrap justify-center mt-4"
+                  initial={{ x: 100 }} // Start position for the bottom row
+                  animate={{ x: 0 }}    // End position for the bottom row
+                  transition={{ duration: 0.5 }}
+                >
+                  {bottomRowSkills.map((skill, index) => (
+                    <motion.div
+                      key={index}
+                      className="flex items-center justify-center m-2 p-2 border rounded-lg"
+                      whileHover={{ scale: 1.1 }}
+                    >
+                      <img
+                        src={skill.logo} // Assuming each skill has a logo property
+                        alt={skill.name}
+                        className="h-10 w-10"
+                      />
+                    </motion.div>
+                  ))}
+                </motion.div>
+
+              </div>
             </div>
           </div>
-    </section>
+        </div>
+      </div>
+    </div>
   );
 };
 

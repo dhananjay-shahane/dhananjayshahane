@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./src/assets/css/style.css">
   <link rel="shortcut icon" href="./src/assets/img/main_logo.png" type="image/x-icon">
-  <title>Dhananjay | Home</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Dhananjay | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body class="relative">
+  
   <div class="min-w-full w-full">
     <div id="root"></div>
   </div>
@@ -21,40 +24,6 @@
       "%c Dhananjay Shahane",
       "font-weight: bold; font-size: 50px; font-family: 'Arial', sans-serif; color: #FF5733; text-shadow: 2px 2px 0 #00A896, 4px 4px 0 #FED766, 6px 6px 0 #F07167, 8px 8px 0 #ED553B, 10px 10px 0 #5BC0EB; margin-bottom: 12px; padding: 5%"
     );
-
-
-    const clouds = [
-      { id: 'cloud-one', start: -300, duration: 3000 },
-      { id: 'cloud-two', start: -800, duration: 3800 },
-      { id: 'cloud-three', start: 800, duration: 6800 },
-      { id: 'cloud-four', start: -530, duration: 6800 },
-      { id: 'cloud-six', start: 830, duration: 9800 }
-    ];
-
-    clouds.forEach(cloud => {
-      const element = document.getElementById(cloud.id);
-      const screenWidth = window.innerWidth;
-
-      const animateCloud = () => {
-        element.style.marginLeft = `${cloud.start}px`;
-        element.style.transition = 'none';
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            element.style.transition = `margin-left ${cloud.duration}ms linear`;
-            element.style.marginLeft = `${screenWidth}px`;
-          });
-        });
-      };
-
-      element.addEventListener('transitionend', () => {
-        animateCloud();
-      });
-
-      animateCloud();
-    });
-
-
-
   </script>
 
 </body>

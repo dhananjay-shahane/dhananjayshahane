@@ -1,13 +1,11 @@
-import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import SkillsSection from "./SkillsSection";
-import Projects from "./Projects";
-
 import Hero from "./Hero";
 import ThemeSelector from "./components/ThemeSelector";
-import Contactus from "./Contactus";
-import ViewPreview from "./ViewPreview";
-import TestimonialSlider from "./components/TestimonialSlider";
+import DevDetails from "./components/DevDetails";
+import { Helmet } from 'react-helmet';
+import Loader from "./components/Loader";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +26,9 @@ function Home() {
 
   return (
     <div>
+      <Helmet>
+        <title>Dhananjay | Software Engineer</title>
+      </Helmet>
       <motion.div
         className="home-container"
         initial={{ opacity: 0 }}
@@ -35,7 +36,6 @@ function Home() {
         exit={{ opacity: 0 }}
       >
         <Hero setIsOpen={setIsOpen} />
-        <ViewPreview />
 
         {isOpen && (
           <ThemeSelector
@@ -44,12 +44,8 @@ function Home() {
           />
         )}
 
-        {/* <ViewPreview/> */}
-
-        <Projects />
         <SkillsSection />
-        <TestimonialSlider/>
-        {/* <Contactus /> */}
+        <DevDetails/>
       </motion.div>
     </div>
   );
