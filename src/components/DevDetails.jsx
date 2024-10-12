@@ -24,10 +24,10 @@ const DevDetails = () => {
               <svg
                 stroke="currentColor"
                 fill="none"
-                stroke-width="2"
+                strokeWidth="2"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="size-10 origin-left transform-gpu text-neutral-900 transition-all duration-300 ease-in-out group-hover:scale-[.80]"
                 height="1em"
                 width="1em"
@@ -62,7 +62,7 @@ const DevDetails = () => {
                 <svg
                   stroke="currentColor"
                   fill="none"
-                  stroke-width="2"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
                   className="text-base md:text-xl"
@@ -71,8 +71,8 @@ const DevDetails = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   ></path>
                 </svg>
@@ -87,7 +87,7 @@ const DevDetails = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 256 256"
                 className="size-10 origin-left transform-gpu text-neutral-900 transition-all duration-300 ease-in-out group-hover:scale-[.80]"
                 height="1em"
@@ -117,7 +117,7 @@ const DevDetails = () => {
                 <svg
                   stroke="currentColor"
                   fill="none"
-                  stroke-width="2"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
                   className="text-base md:text-xl"
@@ -126,8 +126,8 @@ const DevDetails = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   ></path>
                 </svg>
@@ -142,7 +142,7 @@ const DevDetails = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 24 24"
                 className="size-10 origin-left transform-gpu text-neutral-900 transition-all duration-300 ease-in-out group-hover:scale-[.80]"
                 height="1em"
@@ -175,7 +175,7 @@ const DevDetails = () => {
                 <svg
                   stroke="currentColor"
                   fill="none"
-                  stroke-width="2"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
                   className="text-base md:text-xl"
@@ -184,8 +184,8 @@ const DevDetails = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   ></path>
                 </svg>
@@ -201,7 +201,7 @@ const DevDetails = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 640 512"
                 className="size-10 origin-left transform-gpu text-neutral-900 transition-all duration-300 ease-in-out group-hover:scale-[.80]"
                 height="1em"
@@ -231,7 +231,7 @@ const DevDetails = () => {
                 <svg
                   stroke="currentColor"
                   fill="none"
-                  stroke-width="2"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
                   className="text-base md:text-xl"
@@ -240,8 +240,8 @@ const DevDetails = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   ></path>
                 </svg>

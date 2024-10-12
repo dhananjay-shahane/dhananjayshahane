@@ -76,7 +76,7 @@ export default function Contactus() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 version="1.1"
                 viewBox="0 0 16 16"
                 class="size-5 text-neutral-700"
@@ -93,9 +93,8 @@ export default function Contactus() {
               <svg
                 stroke="currentColor"
                 fill="none"
-                stroke-width="2"
+                strokeWidth="2"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
                 stroke-linejoin="round"
                 class="size-5 text-neutral-800"
                 height="1em"
@@ -111,7 +110,7 @@ export default function Contactus() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
                 class="size-5 text-neutral-800"

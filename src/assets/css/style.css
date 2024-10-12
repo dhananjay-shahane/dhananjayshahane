@@ -129,6 +129,11 @@ body {
   src: url("../Fonts/waltograph42.otf");
 }
 
+@font-face {
+  font-family: Courier, monospace;
+  src: url("../Fonts/Caveat-Medium.ttf");
+}
+
 /* Tooltip container */
 .tooltip-container {
   position: relative;
