@@ -3,7 +3,6 @@ import restaurantWebsiteImage from "./assets/img/restaurant-website.png";
 import fitnessWebsiteImage from "./assets/img/Fitness-website.png";
 import BlueRexWebsiteImage from "./assets/img/BlueRex-website.png";
 import FoodDahboardWebsiteImage from "./assets/img/Food-Dashboard.png";
-import netFlixWebsiteImage from "./assets/img/NetFlix-banner.png";
 import colorsWebsiteImage from "./assets/img/Colors-website.png";
 import { Helmet } from 'react-helmet';
 
