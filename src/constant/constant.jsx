@@ -111,10 +111,10 @@ export const experiences = [
   {
     company: "BR Tech Solutions Pvt. Ltd.",
     location: "Remote",
-    position: "Associate Frontend Developer",
+    position: "UI Developer",
     duration: "011/'23 - 09/'24",
     description:
-      `At BR Tech Solutions Private Limited , I actively advanced my skills in front-end development to drive project
+      `At BR Tech Solutions Private Limited , I actively advanced my skills in ui development to drive project
       optimization.I demonstrated proficiency in utilizing contemporary libraries like React.js and frameworks such
       as Tailwind CSS to elevate the user experience.Additionally, I gained experience in Filezilla and Putty tool.
       `,
@@ -123,10 +123,10 @@ export const experiences = [
   {
     company: "Infraveo Technologies",
     location: "Ahmedabad, Gujarat, India",
-    position: "Associate Frontend Developer",
+    position: "Frontend Developer",
     duration: "09/'22 - 08/'23",
     description:
-      "After Internship, I joined Infraveo Technologies as a Associate Frontend Developer, I effectively harness HTML, CSS, and JavaScript to create and manage web applications for diverse client projects, ensuring they meet client expectations and deliver optimal user experiences.",
+      "After Internship, I joined Infraveo Technologies as a Frontend Developer, I effectively harness HTML, CSS, and JavaScript to create and manage web applications for diverse client projects, ensuring they meet client expectations and deliver optimal user experiences.",
     url: "https://www.infraveo.com/",
   },
   {
