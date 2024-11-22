@@ -1,35 +1,4 @@
-const experiences = [
-  {
-    company: "BR Tech Solutions Pvt. Ltd.",
-    location: "Remote",
-    position: "Associate Frontend Developer",
-    duration: "011/'23 - 09/'24",
-    description:
-      `At BR Tech Solutions Private Limited , I actively advanced my skills in front-end development to drive project
-      optimization.I demonstrated proficiency in utilizing contemporary libraries like React.js and frameworks such
-      as Tailwind CSS to elevate the user experience.Additionally, I gained experience in Filezilla and Putty tool.
-      `,
-    url: "https://www.brtechsolution.com/",
-  },
-  {
-    company: "Infraveo Technologies",
-    location: "Ahmedabad, Gujarat, India",
-    position: "Associate Frontend Developer",
-    duration: "09/'22 - 08/'23",
-    description:
-      "After Internship, I joined Infraveo Technologies as a Associate Frontend Developer, I effectively harness HTML, CSS, and JavaScript to create and manage web applications for diverse client projects, ensuring they meet client expectations and deliver optimal user experiences.",
-    url: "https://www.infraveo.com/",
-  },
-  {
-    company: "Infraveo Technologies",
-    location: "Ahmedabad, Gujarat, India",
-    position: "Frontend Developer (Intern)",
-    duration: "09/'22 - 12/'22",
-    description:
-      "I began my career as a Intern at Infraveo Technologies, where I gained firsthand experience in web development agency practices and learned extensively from my mentor.",
-    url: "https://www.infraveo.com/",
-  },
-];
+import {experiences} from '../constant/constant'
 
 const Experience = () => {
   return (
@@ -94,7 +63,7 @@ const Experience = () => {
               <div className="group relative space-y-1.5 py-10 pl-8">
                 <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-5">
                   <div>
-                    <div className="space-x-3 text-base font-medium text-neutral-900">
+                    <div key={exp.index} className="space-x-3 text-base font-medium text-neutral-900">
                       <a
                         href={exp.url}
                         target="_blank"
