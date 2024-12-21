@@ -52,8 +52,8 @@ const ThemeSelectorPopup = ({ setIsOpen, handleSelectTheme }) => {
         <div className="flex flex-col items-center space-y-6">
           {/* First Theme */}
           <div className="flex items-center space-x-4">
-            <div className="bg-[#6a2c00] w-16 h-16 rounded-full border-4 border-white"></div>
-            <div className="bg-[#ffdb58] w-16 h-16 rounded-full border-4 border-white"></div>
+            <div className="bg-[#6a2c00] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
+            <div className="bg-[#ffdb58] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
             <motion.button
               className="bg-[#ff7f2a] text-white py-2 px-6 rounded-lg hover:bg-[#e66d1f]"
               whileTap={{ scale: 0.95 }}
@@ -66,8 +66,8 @@ const ThemeSelectorPopup = ({ setIsOpen, handleSelectTheme }) => {
 
           {/* Second Theme */}
           <div className="flex items-center space-x-4">
-            <div className="bg-[#2c003e] w-16 h-16 rounded-full border-4 border-white"></div>
-            <div className="bg-[#a233ff] w-16 h-16 rounded-full border-4 border-white"></div>
+            <div className="bg-[#2c003e] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
+            <div className="bg-[#a233ff] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
             <motion.button
               className="bg-[#502e80] text-white py-2 px-6 rounded-lg hover:bg-[#45266f]"
               whileTap={{ scale: 0.95 }}
@@ -80,8 +80,8 @@ const ThemeSelectorPopup = ({ setIsOpen, handleSelectTheme }) => {
 
           {/* Third Theme */}
           <div className="flex items-center space-x-4">
-            <div className="bg-[#2c2c2c] w-16 h-16 rounded-full border-4 border-white"></div>
-            <div className="bg-[#ffffff] w-16 h-16 rounded-full border-4 border-white"></div>
+            <div className="bg-[#2c2c2c] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
+            <div className="bg-[#ffffff] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
             <motion.button
               className="bg-[#333333] text-white py-2 px-6 rounded-lg hover:bg-[#292929]"
               whileTap={{ scale: 0.95 }}
