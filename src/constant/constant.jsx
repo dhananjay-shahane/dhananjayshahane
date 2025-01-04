@@ -1,5 +1,5 @@
 import fitnessWebsiteImage from "../assets/img/Fitness-website.png";
-import BlueRexWebsiteImage from "../assets/img/BlueRex-website.png";
+// import BlueRexWebsiteImage from "../assets/img/BlueRex-website.png";
 import colorsWebsiteImage from "../assets/img/Colors-website.png";
 import restaurantWebsiteImage from "../assets/img/restaurant-website.png";
 
@@ -21,14 +21,14 @@ export const projects = [
     tags: ["HTML", "CSS", "Photoshop to HTML"],
     link: "https://fitness-website-coral.vercel.app",
   },
-  {
-    title: "BlueRex Landing Page",
-    image: BlueRexWebsiteImage,
-    description:
-      "A sleek and modern landing page for a tech startup. Designed and implemented using HTML and CSS.",
-    tags: ["HTML", "CSS", "Photoshop to HTML"],
-    link: "",
-  },
+  // {
+  //   title: "BlueRex Landing Page",
+  //   image: BlueRexWebsiteImage,
+  //   description:
+  //     "A sleek and modern landing page for a tech startup. Designed and implemented using HTML and CSS.",
+  //   tags: ["HTML", "CSS", "Photoshop to HTML"],
+  //   link: "",
+  // },
   {
     title: "Colors Website",
     image: colorsWebsiteImage,
