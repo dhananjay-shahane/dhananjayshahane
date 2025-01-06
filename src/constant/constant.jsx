@@ -49,7 +49,7 @@ export const skills = [
 export const experiences = [
   {
     company: "BR Tech Solutions Pvt. Ltd.",
-    location: "Remote, Ahmedabad Gujarat",
+    location: "Remote",
     position: "UI Developer",
     duration: "011/'23 - 09/'24",
     description:

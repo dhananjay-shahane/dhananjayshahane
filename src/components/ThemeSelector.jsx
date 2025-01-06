@@ -38,7 +38,7 @@ const ThemeSelectorPopup = ({ setIsOpen, handleSelectTheme }) => {
       transition={{ duration: 0.3 }}
     >
       <motion.div
-        className="relative w-full max-w-lg p-8 bg-white rounded-lg shadow-lg"
+        className="relative w-full max-w-lg p-8 bg-white shadow-lg"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
@@ -51,11 +51,12 @@ const ThemeSelectorPopup = ({ setIsOpen, handleSelectTheme }) => {
         </button>
         <div className="flex flex-col items-center space-y-6">
           {/* First Theme */}
+
           <div className="flex items-center space-x-4">
-            <div className="bg-[#6a2c00] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
-            <div className="bg-[#ffdb58] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
+            <div className="bg-[#2c2c2c] w-16 h-16  border shadow-2xl"></div>
+            <div className="bg-[#ffffff] w-16 h-16  border shadow-2xl"></div>
             <motion.button
-              className="bg-[#ff7f2a] text-white py-2 px-6 rounded-lg hover:bg-[#e66d1f]"
+              className="bg-[#333333] text-white py-2 px-6 hover:bg-[#292929]"
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 300 }}
               onClick={() => handleButtonClick('theme1')}
@@ -66,10 +67,10 @@ const ThemeSelectorPopup = ({ setIsOpen, handleSelectTheme }) => {
 
           {/* Second Theme */}
           <div className="flex items-center space-x-4">
-            <div className="bg-[#2c003e] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
-            <div className="bg-[#a233ff] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
+            <div className="bg-[#2c003e] w-16 h-16  border shadow-2xl"></div>
+            <div className="bg-[#a233ff] w-16 h-16  border shadow-2xl"></div>
             <motion.button
-              className="bg-[#502e80] text-white py-2 px-6 rounded-lg hover:bg-[#45266f]"
+              className="bg-[#502e80] text-white py-2 px-6 hover:bg-[#45266f]"
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 300 }}
               onClick={() => handleButtonClick('theme2')}
@@ -79,11 +80,12 @@ const ThemeSelectorPopup = ({ setIsOpen, handleSelectTheme }) => {
           </div>
 
           {/* Third Theme */}
+
           <div className="flex items-center space-x-4">
-            <div className="bg-[#2c2c2c] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
-            <div className="bg-[#ffffff] w-16 h-16 rounded-full border-4 border shadow-2xl"></div>
+            <div className="bg-[#6a2c00] w-16 h-16  border shadow-2xl"></div>
+            <div className="bg-[#ffdb58] w-16 h-16  border shadow-2xl"></div>
             <motion.button
-              className="bg-[#333333] text-white py-2 px-6 rounded-lg hover:bg-[#292929]"
+              className="bg-[#ff7f2a] text-white py-2 px-6 hover:bg-[#e66d1f]"
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 300 }}
               onClick={() => handleButtonClick('theme3')}
@@ -91,6 +93,7 @@ const ThemeSelectorPopup = ({ setIsOpen, handleSelectTheme }) => {
               Select Theme
             </motion.button>
           </div>
+
         </div>
       </motion.div>
     </motion.div>

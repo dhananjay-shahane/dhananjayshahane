@@ -33,7 +33,7 @@ const SkillsSection = () => {
         </div>
 
           <div className="md:col-span-4">
-            <div className="group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-white p-5 md:min-h-[300px]">
+            <div className="group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-white shadow-sm p-5 md:min-h-[300px]">
               <h3 className="font-epilogue text-xl font-bold text-neutral-900 md:text-3xl">
                 Skills
               </h3>

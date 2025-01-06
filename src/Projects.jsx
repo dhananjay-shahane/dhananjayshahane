@@ -22,7 +22,7 @@ const Work = () => {
                 rel="noopener noreferrer"
                 className="group relative block h-full w-full p-0 sm:p-2.5"
               >
-                <div className="relative h-full w-full overflow-hidden rounded-2xl border border-transparent bg-white p-3 md:p-5">
+                <div className="relative h-full w-full overflow-hidden rounded-2xl border border-transparent shadow-sm bg-white p-3 md:p-5">
                   <div className="relative space-y-5">
                     <div className="relative">
                       <img
