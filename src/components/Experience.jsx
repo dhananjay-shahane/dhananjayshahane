@@ -18,7 +18,7 @@ const Experience = () => {
             <a
               className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg bg-neutral-900 text-neutral-200 active:scale-[.95] px-6 py-2.5"
               target="_blank"
-              href="/resume_v1.pdf"
+              href="/Resume_v1.pdf"
             >
               <span>Resume</span>
               <div className="skew-12 absolute inset-0 flex h-full w-full translate-x-[-110%] transform justify-center group-hover:translate-x-[100%] group-hover:duration-1000">
