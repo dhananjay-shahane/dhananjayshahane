@@ -2,7 +2,6 @@ import fitnessWebsiteImage from "../assets/img/Fitness-website.png";
 // import BlueRexWebsiteImage from "../assets/img/BlueRex-website.png";
 import colorsWebsiteImage from "../assets/img/Colors-website.png";
 import restaurantWebsiteImage from "../assets/img/restaurant-website.png";
-import food4youWebsiteImage from "../assets/img/food4you.png";
 
 // project details
 export const projects = [
@@ -15,29 +14,13 @@ export const projects = [
     link: "https://fitness-website-coral.vercel.app",
   },
   {
-    title: "Food4You Landing Page",
-    image: food4youWebsiteImage,
-    description:
-      "A sleek and modern landing page for a restaurant startup. Designed and implemented using HTML and BootStrap5.",
-    tags: ["HTML", "BootStrap5", "Figma to BootStrap5"],
-    link: "",
-  },
-  {
-    title: "Restaurant Website",
+    title: "Restaurant Landing Page",
     image: restaurantWebsiteImage,
     description:
-      "A dynamic restaurant website with features like menu browsing, cart management, and online ordering. Built using React JS and Tailwind CSS.",
-    tags: ["React JS", "Tailwind CSS"],
+      "A restaurant landing page with features like menu browsing, cart management, and online ordering. Built using Html 5 and Tailwind CSS.",
+    tags: ["HTML", "Tailwind CSS"],
     link: "https://restaurant-io-eta.vercel.app",
   },
-  // {
-  //   title: "BlueRex Landing Page",
-  //   image: BlueRexWebsiteImage,
-  //   description:
-  //     "A sleek and modern landing page for a tech startup. Designed and implemented using HTML and CSS.",
-  //   tags: ["HTML", "CSS", "Photoshop to HTML"],
-  //   link: "",
-  // },
   {
     title: "Colors Website",
     image: colorsWebsiteImage,
