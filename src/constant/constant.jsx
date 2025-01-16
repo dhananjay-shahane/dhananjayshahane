@@ -1,12 +1,22 @@
 import fitnessWebsiteImage from "../assets/img/Fitness-website.png";
-// import BlueRexWebsiteImage from "../assets/img/BlueRex-website.png";
+import BlueRexWebsiteImage from "../assets/img/BlueRex-website.png";
 import colorsWebsiteImage from "../assets/img/Colors-website.png";
 import restaurantWebsiteImage from "../assets/img/restaurant-website.png";
+import movieFlixImage from "../assets/img/movieflix.png";
+import jadooTravelImage from "../assets/img/jadoo-travel.png";
 
 // project details
 export const projects = [
   {
-    title: "Fitness Landing Page",
+    title: "Jadoo Travel",
+    image: jadooTravelImage, 
+    description:
+      "A travel landing page offering destination packages, booking options, and travel tips. Built using HTML, CSS, and JavaScript for an engaging and interactive experience.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://jadoo-travel-agency-seven.vercel.app/",
+  },
+  {
+    title: "Alex Fitness",
     image: fitnessWebsiteImage,
     description:
       "A fitness landing page designed to showcase workout plans, trainers, and health tips. Converted from Photoshop to HTML, using HTML and CSS.",
@@ -14,7 +24,7 @@ export const projects = [
     link: "https://fitness-website-coral.vercel.app",
   },
   {
-    title: "Restaurant Landing Page",
+    title: "FoodHunt",
     image: restaurantWebsiteImage,
     description:
       "A restaurant landing page with features like menu browsing, cart management, and online ordering. Built using Html 5 and Tailwind CSS.",
@@ -29,7 +39,24 @@ export const projects = [
     tags: ["HTML", "Tailwind CSS", "JavaScript"],
     link: "https://colors-website-2023.vercel.app",
   },
+  {
+    title: "MovieFlix",
+    image: movieFlixImage, 
+    description:
+      "A Netflix clone built with Html, CSS, JavaScript featuring a sleek UI for browsing movies and TV shows, with filtering and search functionality.",
+    tags: ["Html", "CSS", "JavaScript"],
+    link: "https://movieflix-io.vercel.app",
+  },
+  {
+    title: "BlueRex",
+    image: BlueRexWebsiteImage,
+    description:
+      "A modern landing page for BlueRex, featuring sleek animations, a responsive layout, and engaging content. Built with HTML, CSS, and JavaScript.",
+    tags: ["HTML", "CSS", "JavaScript" , "Photoshop to HTML"],
+    link: "https://bluerex-io.vercel.app",
+  },
 ];
+
 
 
 //   Skills details
@@ -40,7 +67,6 @@ export const skills = [
   { name: 'Bootstrap 5', logo: 'https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg' },
   { name: 'Beginner React', logo: 'https://cdn.worldvectorlogo.com/logos/react-2.svg' },
   { name: 'Tailwind CSS', logo: 'https://cdn.worldvectorlogo.com/logos/tailwindcss.svg' },
-  // { name: 'Beginner Node.js', logo: 'https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg' },
   { name: 'Beginner Motion', logo: 'https://cdn.worldvectorlogo.com/logos/framer-motion.svg' },
   { name: 'Photoshop To Html', logo: 'https://cdn.worldvectorlogo.com/logos/adobe-photoshop-2.svg' },
   { name: 'WordPress', logo: 'https://cdn.worldvectorlogo.com/logos/wordpress-icon.svg' },
