@@ -104,3 +104,38 @@ export const experiences = [
     url: "https://www.infraveo.com/",
   },
 ];
+
+export const quotes = [
+    {
+      text: "You have to dream before your dreams can come true.",
+      author: "Dr. A.P.J. Abdul Kalam",
+    },
+    {
+      text: "Be the change that you wish to see in the world.",
+      author: "Mahatma Gandhi",
+    },
+    {
+      text: "Success is when your signature becomes an autograph.",
+      author: "Dr. A.P.J. Abdul Kalam",
+    },
+    {
+      text: "The best way to find yourself is to lose yourself in the service of others.",
+      author: "Mahatma Gandhi",
+    },
+    {
+      text: "A person who never made a mistake never tried anything new.",
+      author: "Rabindranath Tagore",
+    },
+    {
+      text: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+      author: "Nelson Mandela",
+    },
+    {
+      text: "Life is not merely to be alive, but to be well.",
+      author: "Marcus Tullius Cicero",
+    },
+    {
+      text: "What we think, we become.",
+      author: "Buddha",
+    },
+  ];

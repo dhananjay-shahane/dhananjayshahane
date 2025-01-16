@@ -77,7 +77,7 @@ const About = () => {
             </div>
           </div>
           <div className="group overflow-hidden rounded-xl md:col-span-4">
-            <img alt="About Me" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" srcset={superHero} src={superHero} />
+            <img alt="About Me" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" srcSet={superHero} src={superHero} />
           </div>
         </div>
       </div>

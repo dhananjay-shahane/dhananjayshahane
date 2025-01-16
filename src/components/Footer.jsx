@@ -1,45 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
+import FooterImg from "../assets/img/footer.jpg";
+import { quotes } from "../constant/constant"
 
 const Footer = () => {
+
+  const currentYear = new Date().getFullYear();
+  const country = "India";
+
+
   const [quote, setQuote] = useState("");
   const [time, setTime] = useState("");
-
-  const quotes = [
-    {
-      text: "You have to dream before your dreams can come true.",
-      author: "Dr. A.P.J. Abdul Kalam",
-    },
-    {
-      text: "Be the change that you wish to see in the world.",
-      author: "Mahatma Gandhi",
-    },
-    {
-      text: "Success is when your signature becomes an autograph.",
-      author: "Dr. A.P.J. Abdul Kalam",
-    },
-    {
-      text: "The best way to find yourself is to lose yourself in the service of others.",
-      author: "Mahatma Gandhi",
-    },
-    {
-      text: "A person who never made a mistake never tried anything new.",
-      author: "Rabindranath Tagore",
-    },
-    {
-      text: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-      author: "Nelson Mandela",
-    },
-    {
-      text: "Life is not merely to be alive, but to be well.",
-      author: "Marcus Tullius Cicero",
-    },
-    {
-      text: "What we think, we become.",
-      author: "Buddha",
-    },
-  ];
-  
 
   // Update the quote every 5 seconds
   useEffect(() => {
@@ -83,8 +54,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="mt-5 bg-white" style={footerStyle}>
-      <div className="max-w-7xl mx-auto p-5">
+    <footer className="bg-white relative"  style={footerStyle}>
+      <div className="max-w-7xl mx-auto px-3">
         <div className="grid grid-cols-1 gap-10 pb-10 md:pb-20 pt-5 lg:grid-cols-12 lg:gap-5">
           <div className="flex flex-col items-start justify-center space-y-5 text-center lg:col-span-7 lg:text-start">
             <div className="w-full space-y-2.5">
@@ -133,11 +104,12 @@ const Footer = () => {
         </div>
         <div className="footer_footerWrapper text-center py-5">
           <p className="footer_footerText text-center">
-            Copyright © 2025 All rights reserved | Made With ❤️&amp;🧠 In{" "}
-            <span className="fw-bolder text-dark">India</span>
+            Copyright © {currentYear} All rights reserved | Made With ❤️&amp;🧠 In{" "}
+            <span className="fw-bolder text-dark">{country}</span>
           </p>
         </div>
       </div>
+      <img className="max-w-4xl mx-auto absolute -bottom-38 left-0 right-0" src={FooterImg} alt="footer-img" />
     </footer>
   );
 };
