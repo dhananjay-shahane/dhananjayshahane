@@ -18,17 +18,17 @@ const About = () => {
             By Day a Front End Developer, By Night a Superhero — Here I Am!
             </h1>
             <div className="grid grid-cols-1 gap-2.5 md:grid-cols-12">
-              <div className="rounded-xl bg-white p-2.5 md:col-span-12 md:p-5">
+              <div className="rounded-xl bg-gray-100 p-2.5 md:col-span-12 md:p-5">
                 <p className="text-base text-neutral-900 md:text-xl">
                   <strong>Transforming startups of all scales</strong> with bespoke web experiences that leave a mark and drive growth. Fueled by a love for design and development, I oversee projects from initial concepts to final launch, ensuring a flawless process that makes a lasting impression in the digital realm.
                 </p>
               </div>
-              <div className="rounded-xl bg-white p-2.5 md:col-span-9 md:p-5">
+              <div className="rounded-xl bg-gray-100 p-2.5 md:col-span-9 md:p-5">
                 <p className="text-base text-neutral-900 md:text-xl">
                   My name is <strong>Dhananjay Shahane</strong>, and I'm passionate about building digital products, from websites to applications and everything in between. My fascination with computers ignited at a young age, and I've been refining my technical expertise ever since, with the goal of creating my own innovations. Thus, I embarked on my journey as a front end developer.
                 </p>
               </div>
-              <div className="flex cursor-pointer items-center justify-center rounded-xl bg-white p-2.5 md:col-span-3 md:p-5">
+              <div className="flex cursor-pointer items-center justify-center rounded-xl bg-gray-100 p-2.5 md:col-span-3 md:p-5">
                 <Link
                   className="relative font-epilogue font-bold text-neutral-900 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-100 after:bg-neutral-800 after:transition-transform after:duration-150 after:ease-in-out hover:after:origin-bottom-right hover:after:scale-x-0 md:text-2xl"
                   to="/contact"
@@ -39,7 +39,7 @@ const About = () => {
             </div>
             <div className="w-full space-y-2.5">
               <div className="grid w-full grid-cols-1 grid-rows-4 gap-2.5 lg:grid-cols-12">
-                <div className="row-span-2 flex flex-col justify-center space-y-1.5 rounded-xl bg-white p-2.5 md:p-5 lg:col-span-6">
+                <div className="row-span-2 flex flex-col justify-center space-y-1.5 rounded-xl bg-gray-100 p-2.5 md:p-5 lg:col-span-6">
                   <h3 className="font-epilogue text-sm font-bold text-neutral-900 md:text-lg">
                     My Age
                   </h3>
@@ -47,17 +47,15 @@ const About = () => {
                     24 Years
                   </p>
                 </div>
-                <div className="relative row-span-4 overflow-hidden rounded-xl bg-white lg:col-span-6">
+                <div className="relative row-span-4 overflow-hidden rounded-xl bg-gray-100 lg:col-span-6">
                   <h3 className="px-2.5 pt-2.5 font-epilogue text-sm font-bold text-neutral-900 md:px-5 md:pt-5 md:text-lg">
                     Location: Ahmedabad, Gujarat, India
                   </h3>
                   <div className="absolute bottom-[-30%] right-0 mx-auto aspect-square sm:h-[200%] md:h-[150%] lg:bottom-[-50%] lg:right-[-20%] [@media(max-width:640px)]:h-[140px]">
-                    <div>
-                      <canvas width="690" height="690"></canvas>
-                    </div>
+                    
                   </div>
                 </div>
-                <div className="relative row-span-2 overflow-hidden rounded-xl bg-white p-2.5 md:p-5 lg:col-span-3">
+                <div className="relative row-span-2 overflow-hidden rounded-xl bg-gray-100 p-2.5 md:p-5 lg:col-span-3">
                   <div className="space-y-1 md:space-y-2.5">
                     <h3 className="font-epilogue text-sm font-bold text-neutral-900 md:text-lg">
                       GitHub Stars
@@ -67,7 +65,7 @@ const About = () => {
                     </p>
                   </div>
                 </div>
-                <div className="row-span-2 space-y-1 rounded-xl bg-white p-2.5 md:space-y-2.5 md:p-5 lg:col-span-3">
+                <div className="row-span-2 space-y-1 rounded-xl bg-gray-100 p-2.5 md:space-y-2.5 md:p-5 lg:col-span-3">
                   <h3 className="font-epilogue text-sm font-bold text-neutral-900 md:text-lg">
                     Projects Completed
                   </h3>

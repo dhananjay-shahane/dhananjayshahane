@@ -4,8 +4,8 @@ import SkillsSection from "./SkillsSection";
 import Hero from "./Hero";
 import ThemeSelector from "./components/ThemeSelector";
 import DevDetails from "./components/DevDetails";
+import Projects from "./components/Projects";
 import { Helmet } from 'react-helmet';
-import Loader from "./components/Loader";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,13 +30,12 @@ function Home() {
         <title>Dhananjay | Software Engineer</title>
       </Helmet>
       <motion.div
-        className="home-container"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <Hero setIsOpen={setIsOpen} />
-
+        <Hero />
+        
         {isOpen && (
           <ThemeSelector
             setIsOpen={setIsOpen}
@@ -45,7 +44,8 @@ function Home() {
         )}
 
         <SkillsSection />
-        <DevDetails/>
+        <div className="mt-[50px]"><Projects /></div>
+        <DevDetails />
       </motion.div>
     </div>
   );

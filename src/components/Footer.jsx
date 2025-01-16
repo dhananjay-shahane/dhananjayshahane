@@ -85,7 +85,7 @@ const Footer = () => {
   return (
     <footer className="mt-5 bg-white" style={footerStyle}>
       <div className="max-w-7xl mx-auto p-5">
-        <div className="grid grid-cols-1 gap-10 pb-10 md:pb-20 lg:grid-cols-12 lg:gap-5">
+        <div className="grid grid-cols-1 gap-10 pb-10 md:pb-20 pt-5 lg:grid-cols-12 lg:gap-5">
           <div className="flex flex-col items-start justify-center space-y-5 text-center lg:col-span-7 lg:text-start">
             <div className="w-full space-y-2.5">
               <h2 className="font-epilogue text-2xl font-semibold leading-10 text-neutral-900 md:text-4.5xl">
@@ -127,13 +127,13 @@ const Footer = () => {
           <blockquote className="relative flex w-full flex-col justify-start text-start lg:col-span-5">
             <p className="mb-14 text-start quotes-text font-caveat text-5xl text-neutral-900 md:mb-8 md:text-xl">
               {quote.text} <br />
-              <span className="text-neutral-500 text-base text-5xl">— {quote.author}</span>
+              <span className="text-neutral-500 text-3xl">— {quote.author}</span>
             </p>
           </blockquote>
         </div>
         <div className="footer_footerWrapper text-center py-5">
           <p className="footer_footerText text-center">
-            Copyright © 2024 All rights reserved | Made With ❤️&amp;🧠 In{" "}
+            Copyright © 2025 All rights reserved | Made With ❤️&amp;🧠 In{" "}
             <span className="fw-bolder text-dark">India</span>
           </p>
         </div>

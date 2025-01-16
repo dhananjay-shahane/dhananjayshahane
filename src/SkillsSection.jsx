@@ -1,6 +1,6 @@
 import React from "react";
-import { skills } from "./constant/constant.jsx"; // Ensure this file exports an array of skills
-import { motion } from "framer-motion"; // Importing Framer Motion for animations
+import { skills } from "./constant/constant.jsx";
+import { motion } from "framer-motion";
 
 const SkillsSection = () => {
   // Split the skills into two rows for demonstration
@@ -9,7 +9,7 @@ const SkillsSection = () => {
   const bottomRowSkills = skills.slice(midIndex);
 
   return (
-    <div className="py-10 md:py-20 lg:py-28">
+    <div className="py-10 md:py-20 lg:py-28 bg-gray-100">
       <div className="receptacle max-w-7xl mx-auto p-5">
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-12 lg:gap-0">
         <div className="space-y-5 lg:col-span-8">
@@ -37,7 +37,7 @@ const SkillsSection = () => {
               <h3 className="font-epilogue text-xl font-bold text-neutral-900 md:text-3xl">
                 Skills
               </h3>
-              <div className="absolute bottom-0 left-4 right-4 top-10 translate-y-6 rounded-t-2xl bg-gradient-to-br from-primary to-secondary/10 transition-transform duration-300 group-hover:translate-y-3 group-hover:rotate-[-1deg] md:top-20">
+              <div className="absolute bottom-0 left-4 right-4 top-10 translate-y-6 rounded-t-2xl bg-gradient-to-br from-primary to-secondary/10 md:top-20">
                 {/* Top Row Skills */}
                 <motion.div
                   className="flex flex-wrap justify-center mt-4"

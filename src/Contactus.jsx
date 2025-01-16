@@ -47,7 +47,7 @@ export default function Contactus() {
       <Helmet>
         <title>Contact us | Dhananjay Shahane</title>
       </Helmet>
-      <div className="receptacle mt-5 size-full max-w-7xl mx-auto overflow-hidden md:mt-10 md:w-2/3 md:py-0 xl:w-2/5">
+      <div className="receptacle mt-5 size-full  mx-auto overflow-hidden md:mt-10 md:w-2/3 md:py-0 xl:w-2/5">
         <h1 className="mb-5 text-center font-epilogue text-4xl font-bold md:mb-10 md:text-6xl">
           Contact
         </h1>
@@ -57,7 +57,7 @@ export default function Contactus() {
         </h2>
 
         <a
-          className="flex w-full cursor-pointer flex-col space-y-5 rounded-xl border border-neutral-300 bg-white bg-gradient-to-tr px-6 py-5 transition-all duration-300 hover:scale-[101%] hover:shadow-sm"
+          className="flex w-full cursor-pointer flex-col space-y-5 rounded-xl border border-neutral-300 bg-gray-100 bg-gradient-to-tr px-6 py-5 transition-all duration-300 hover:scale-[101%] hover:shadow-sm"
           href="https://cal.com/dhananjayshahane/30min"
           target="_blank"
         >
@@ -139,7 +139,7 @@ export default function Contactus() {
             <Form className="space-y-5">
               <div className="space-y-1.5">
                 <Field
-                  className="w-full rounded-xl border-0 bg-white p-3 text-base text-neutral-900 outline-none placeholder:text-base placeholder:text-neutral-600 md:p-3.5 md:text-xl md:placeholder:text-lg"
+                  className="w-full rounded-xl border-0 bg-gray-100 p-3 text-base text-neutral-900 outline-none placeholder:text-base placeholder:text-neutral-600 md:p-3.5 md:text-xl md:placeholder:text-lg"
                   name="name"
                   placeholder="Name"
                   type="text"
@@ -153,7 +153,7 @@ export default function Contactus() {
 
               <div className="space-y-1.5">
                 <Field
-                  className="w-full rounded-xl border-0 bg-white p-3 text-base text-neutral-900 outline-none placeholder:text-base placeholder:text-neutral-600 md:p-3.5 md:text-xl md:placeholder:text-lg"
+                  className="w-full rounded-xl border-0 bg-gray-100 p-3 text-base text-neutral-900 outline-none placeholder:text-base placeholder:text-neutral-600 md:p-3.5 md:text-xl md:placeholder:text-lg"
                   name="email"
                   placeholder="Email"
                   type="email"
@@ -168,7 +168,7 @@ export default function Contactus() {
               <div className="space-y-1.5">
                 <Field
                   as="textarea"
-                  className="min-h-full w-full rounded-xl border-0 bg-white p-3 text-base text-neutral-900 outline-none placeholder:text-base placeholder:text-neutral-600 md:p-3.5 md:text-xl md:placeholder:text-lg"
+                  className="min-h-full w-full rounded-xl border-0 bg-gray-100 p-3 text-base text-neutral-900 outline-none placeholder:text-base placeholder:text-neutral-600 md:p-3.5 md:text-xl md:placeholder:text-lg"
                   name="message"
                   rows="4"
                   placeholder="What's on your mind?"
@@ -183,7 +183,7 @@ export default function Contactus() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="mt-2.5 w-full rounded-md border-2 border-neutral-900 bg-white px-10 py-2.5 font-semibold uppercase text-neutral-900 transition-all duration-200 hover:-translate-x-1 hover:-translate-y-1 hover:rounded-md hover:shadow-neo active:translate-x-0 active:translate-y-0 active:rounded-md active:shadow-none disabled:pointer-events-none disabled:bg-neutral-800 disabled:text-white"
+                className="mt-2.5 w-full rounded-md border-2 border-neutral-900 bg-gray-100 px-10 py-2.5 font-semibold uppercase text-neutral-900 transition-all duration-200 hover:-translate-x-1 hover:-translate-y-1 hover:rounded-md hover:shadow-neo active:translate-x-0 active:translate-y-0 active:rounded-md active:shadow-none disabled:pointer-events-none disabled:bg-neutral-800 disabled:text-white"
               >
                 {isSubmitting ? "Sending..." : "Submit"}
               </button>

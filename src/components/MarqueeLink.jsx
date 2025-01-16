@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const MarqueeLink = () => {
   return (
     <Link to="/contact">
-      <div className="rfm-marquee-container cursor-pointer shadow-sm rounded-full border border-transparent bg-white p-2 text-neutral-900 transition-transform hover:scale-105 hover:border hover:border-neutral-300 active:scale-95">
+      <div className="rfm-marquee-container cursor-pointer shadow-sm rounded-full border border-transparent bg-gray-100 p-2 text-neutral-900 transition-transform hover:scale-105 hover:border hover:border-neutral-300 active:scale-95">
         <div
           className="rfm-marquee"
           style={{

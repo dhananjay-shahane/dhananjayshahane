@@ -9,28 +9,17 @@ import ErrorPage from "./ErrorPage";
 const Home = React.lazy(() => import("./Home"));
 const About = React.lazy(() => import("./About"));
 const Projects = React.lazy(() => import("./Projects"));
-const BlogSection = React.lazy(() => import("./BlogSection"));
+// const BlogSection = React.lazy(() => import("./BlogSection"));
 const Contactus = React.lazy(() => import("./Contactus"));
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-
-  // Simulating data fetching
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false); // Hide loader after 2 seconds
-  //   }, 100); // Adjust the time as necessary
-
-  //   // Clean up the timer
-  //   return () => clearTimeout(timer);
-  // }, []);
 
   return (
     <BrowserRouter>
       {/* {loading ? ( */}
         {/* <Loader />
       ) : ( */}
-        <Suspense >
+        <Suspense  >
           <div>
             <Header />
             <div>

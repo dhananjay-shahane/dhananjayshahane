@@ -40,11 +40,17 @@ function Header() {
     <header className="body-font text-black sticky top-0 z-10 border-b-2" style={headerStyle}>
       <nav className="flex justify-between items-center p-4 max-w-7xl mx-auto">
         <Link className="logo" to="/" style={logostyle}>
-          Dhananjay Shahane <br />
+          Dhananjay <br />
         </Link>
         <div className="mx-auto hidden w-full md:col-span-6 md:block xl:w-1/3">
           <MarqueeLink />
         </div>
+        {/* <button
+             onClick={() => setIsOpen(true)}
+              className="text-3xl cursor-pointer"
+            >
+              🌈
+        </button> */}
         <div className="flex items-center">
           <div className="outer-menu ml-4">
             <input

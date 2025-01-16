@@ -13,7 +13,7 @@ const DevDetails = () => {
 
         <div className="grid w-full auto-rows-[20rem] grid-cols-1 gap-5 md:grid-cols-12">
           {/* Project Highlights */}
-          <div className="group relative flex transform-gpu flex-col justify-between overflow-hidden rounded-2xl bg-white md:col-span-6 lg:col-span-8">
+          <div className="group relative flex transform-gpu flex-col justify-between overflow-hidden rounded-2xl bg-gray-100 md:col-span-6 lg:col-span-8">
             <div>
               <div className="absolute h-full w-full overflow-hidden opacity-20 [perspective:200px]">
                 <div className="absolute inset-0 [transform:rotateX(45deg)]">
@@ -79,7 +79,7 @@ const DevDetails = () => {
             </div>
           </div>
           {/* Technologies and Tools Used */}
-          <div className="group relative flex transform-gpu flex-col justify-between overflow-hidden rounded-2xl bg-white md:col-span-6 lg:col-span-4">
+          <div className="group relative flex transform-gpu flex-col justify-between overflow-hidden rounded-2xl bg-gray-100 md:col-span-6 lg:col-span-4">
             <div>
               <div className="absolute left-0 top-0 w-full"></div>
             </div>
