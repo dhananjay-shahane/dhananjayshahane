@@ -3,7 +3,7 @@ import React from "react";
 const Loader = () => {
   return (
     <div
-      className="absolute z-50 flex w-full items-center justify-center bg-neutral-950"
+      className="fixed z-50 flex w-full items-center justify-center bg-neutral-950"
       id="initialLoader"
       style={{ height: "100vh", top: "0px" }}
     >

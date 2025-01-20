@@ -47,7 +47,7 @@ export default function Contactus() {
       <Helmet>
         <title>Contact us | Dhananjay Shahane</title>
       </Helmet>
-      <div className="receptacle mt-5 size-full  mx-auto overflow-hidden md:mt-10 md:w-2/3 md:py-0 xl:w-2/5">
+      <div className="receptacle mt-5 size-full  mx-auto overflow-hidden md:mt-10 max-w-3xl">
         <h1 className="mb-5 text-center font-epilogue text-4xl font-bold md:mb-10 md:text-6xl">
           Contact
         </h1>
