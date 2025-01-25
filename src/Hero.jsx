@@ -28,22 +28,14 @@ const Hero = () => {
                 , I'm
               </h1>
               <div className="flex select-none justify-center overflow-hidden gap-3">
-              <motion.p
+              <motion.h1
                 className="relative inline-flex text-center font-epilogue text-4xl font-bold text-neutral-900 md:text-7xl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
-                Dhananjay
-              </motion.p>
-              <motion.p
-                className="relative inline-flex text-center font-epilogue text-4xl font-bold text-neutral-900 md:text-7xl"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.6 }}
-              >
-                Shahane
-              </motion.p>
+                Dhananjay Shahane
+              </motion.h1>
             </div>
             <motion.p
               className="text-base tracking-wide text-neutral-500 md:text-2xl md:leading-10 mt-5"
@@ -51,7 +43,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-             I am a Front-End Developer and Freelancer passionate about tackling complex challenges and transforming them into intuitive interfaces through thoughtful design and code. With my skills, I craft visually appealing and seamless user experiences. I also support startups around the globe, partnering with them to help gain their competitive edge and achieve growth.
+             UI Developer and Freelancer specializing in React.js, Tailwind CSS I am passionate about solving complex challenges and transforming them into user-friendly, visually appealing digital experiences. With a focus on responsive web design and seamless interactions, I partner with startups and businesses globally to build innovative websites and applications that boost user engagement, drive growth, and give them a competitive edge in the market.
             </motion.p>
               
             <div className="flex justify-center">
