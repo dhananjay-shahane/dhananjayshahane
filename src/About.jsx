@@ -7,6 +7,10 @@ const About = () => {
   return (
     
     <main className="overflow-x-hidden p-4">
+      <Helmet>
+        <title>About | Dhananjay Shahane</title>
+      </Helmet>
+
       <div className="wrapper space-y-5 py-10 md:py-28 max-w-7xl mx-auto">
         <div className="grid h-full gap-5 md:grid-cols-12 md:gap-10">
           <div className="flex flex-col items-start justify-center space-y-2.5 md:col-span-8">

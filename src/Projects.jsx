@@ -30,6 +30,9 @@ const Work = () => {
 
   return (
     <main className="overflow-x-hidden">
+      <Helmet>
+        <title>Work | Dhananjay Shahane</title>
+      </Helmet>
       <div className="receptacle space-y-5 max-w-7xl mx-auto p-3">
         <h1 className="text-center font-epilogue text-4xl font-bold text-neutral-900 md:text-5xl">
           Works

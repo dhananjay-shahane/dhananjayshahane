@@ -26,6 +26,9 @@ function Home() {
 
   return (
     <div>
+      <Helmet>
+        <title>Dhananjay Shahane | Web Developer</title>
+      </Helmet>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

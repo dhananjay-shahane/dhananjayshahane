@@ -32,7 +32,6 @@ export default function App() {
             element={
               <>
                 <Helmet>
-                  <title>Dhananjay Shahane | Web Developer </title>
                   <meta
                     name="description"
                     content="Discover Dhananjay Shahane's portfolio as a passionate Front-End Developer specializing in React.js, UI/UX design, and web development."
@@ -93,7 +92,7 @@ export default function App() {
             element={
               <>
                 <Helmet>
-                  <title>About Dhananjay Shahane - Front-End Developer</title>
+                  <title>About | Dhananjay Shahane</title>
                   <meta
                     name="description"
                     content="Learn about Dhananjay Shahane, a passionate Front-End Developer dedicated to creating intuitive, user-friendly web experiences using React.js."
@@ -132,7 +131,7 @@ export default function App() {
             element={
               <>
                 <Helmet>
-                  <title>My Projects - Dhananjay Shahane</title>
+                  <title>Work | Dhananjay Shahane</title>
                   <meta
                     name="description"
                     content="Explore the web development projects of Dhananjay Shahane, including innovative React.js applications and stunning UI designs."
@@ -171,7 +170,7 @@ export default function App() {
             element={
               <>
                 <Helmet>
-                  <title>Contact Dhananjay Shahane</title>
+                  <title>Contact us | Dhananjay Shahane</title>
                   <meta
                     name="description"
                     content="Get in touch with Dhananjay Shahane, a skilled Front-End Developer and freelancer, to discuss your next web development project."

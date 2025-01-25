@@ -44,6 +44,9 @@ export default function Contactus() {
 
   return (
     <main className="overflow-x-hidden p-4">
+      <Helmet>
+        <title>Contact us | Dhananjay Shahane</title>
+      </Helmet>
       <div className="receptacle mt-5 size-full  mx-auto overflow-hidden md:mt-10 max-w-3xl">
         <h1 className="mb-5 text-center font-epilogue text-4xl font-bold md:mb-10 md:text-6xl">
           Contact
