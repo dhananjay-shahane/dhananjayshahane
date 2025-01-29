@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Loader from "./components/Loader";
 import ErrorPage from "./ErrorPage";
 
 
