@@ -6,23 +6,17 @@ import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import ErrorPage from "./ErrorPage";
 
-// Function to delay import of components
-const delayImport = (importFunc, delay = 2000) => {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(importFunc()), delay);
-  });
-};
 
 // Lazy-load components with delay
-const Home = React.lazy(() => delayImport(() => import("./Home"), 3000)); // 3s delay
-const About = React.lazy(() => delayImport(() => import("./About"), 3000)); // 2s delay
-const Projects = React.lazy(() => delayImport(() => import("./Projects"), 2500)); // 2.5s delay
-const Contactus = React.lazy(() => delayImport(() => import("./Contactus"), 3000)); // 2s delay
+const Home = React.lazy(() => import("./Home")); // 3s delay
+const About = React.lazy(() => import("./About")); // 2s delay
+const Projects = React.lazy(() => import("./Projects")); // 2.5s delay
+const Contactus = React.lazy(() => import("./Contactus")); // 2s delay
 
 export default function App() {
   return (
     <Router>
-      <Suspense fallback={<Loader />}>
+      <Suspense>
         <Header />
         <Routes>
           {/* Home Route */}
