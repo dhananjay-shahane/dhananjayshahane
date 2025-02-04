@@ -1,35 +1,57 @@
 import fitnessWebsiteImage from "../assets/img/Fitness-website.png";
 import BlueRexWebsiteImage from "../assets/img/BlueRex-website.png";
 import colorsWebsiteImage from "../assets/img/Colors-website.png";
-import restaurantWebsiteImage from "../assets/img/restaurant-website.png";
+import restaurantWebsiteImage from "../assets/img/freshfood.png";
+import restaurantAdminPanelImage from "../assets/img/food-admin.png"
 import movieFlixImage from "../assets/img/movieflix.png";
 import jadooTravelImage from "../assets/img/jadoo-travel.png";
 
 // project details
 export const projects = [
   {
+    title: "FreshFood",
+    image: restaurantWebsiteImage,
+    description:
+      "A restaurant landing page with features like menu browsing, cart management, online ordering, and payment integration with Stripe. Built using React.js, Tailwind CSS, and Redux for state management.",
+    tags: ["React.js", "Tailwind CSS", "Redux", "Stripe Payment Integration"],
+    link: "https://final-project-dun-iota.vercel.app",
+    features: [
+      "Dynamic menu browsing",
+      "Shopping cart with real-time updates",
+      "Payment integration with Stripe",
+      "User login and authentication",
+      "Add to cart food and manage orders",
+      "Optimized for mobile and tablet users",
+    ],
+  },
+  {
+    title: "FreshFood Admin Panel",
+    image: restaurantAdminPanelImage, // Add image for the admin panel here
+    description:
+      "An admin panel to manage orders, add food items, create categories, and manage payments. Built using Node.js, Express, MongoDB for the backend, and React.js with Tailwind CSS for the frontend.",
+    tags: ["MongoDB", "Node.js", "Express", "React.js", "Tailwind CSS"],
+    link: "https://fresh-food-mu.vercel.app", // Add actual link for the admin panel
+    features: [
+      "Manage orders and track status",
+      "Add food items and categories",
+      "Payment management and order history",
+      "Real-time updates with Redux",
+      "Fully responsive and mobile-friendly UI",
+    ],
+  },
+  {
     title: "Jadoo Travel",
-    image: jadooTravelImage, 
+    image: jadooTravelImage,
     description:
       "A travel landing page offering destination packages, booking options, and travel tips. Built using HTML, CSS, and JavaScript for an engaging and interactive experience.",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://jadoo-travel-agency-seven.vercel.app/",
-  },
-  {
-    title: "Alex Fitness",
-    image: fitnessWebsiteImage,
-    description:
-      "A fitness landing page designed to showcase workout plans, trainers, and health tips. Converted from Photoshop to HTML, using HTML and CSS.",
-    tags: ["HTML", "CSS", "Photoshop to HTML"],
-    link: "https://fitness-website-coral.vercel.app",
-  },
-  {
-    title: "FoodHunt",
-    image: restaurantWebsiteImage,
-    description:
-      "A restaurant landing page with features like menu browsing, cart management, and online ordering. Built using Html 5 and Tailwind CSS.",
-    tags: ["HTML", "Tailwind CSS"],
-    link: "https://restaurant-io-eta.vercel.app",
+    features: [
+      "Responsive design for all devices",
+      "Interactive UI with animations",
+      "Booking and destination details",
+      "SEO-friendly structure",
+    ],
   },
   {
     title: "Colors Website",
@@ -38,24 +60,59 @@ export const projects = [
       "A vibrant website featuring color palettes and themes, with interactive elements. Developed with HTML, Tailwind CSS, and JavaScript.",
     tags: ["HTML", "Tailwind CSS", "JavaScript"],
     link: "https://colors-website-2023.vercel.app",
+    features: [
+      "Color palette generator",
+      "Interactive UI with smooth animations",
+      "Lightweight and fast loading",
+      "User-friendly design",
+    ],
   },
   {
-    title: "MovieFlix",
-    image: movieFlixImage, 
+    title: "Alex Fitness",
+    image: fitnessWebsiteImage,
     description:
-      "A Netflix clone built with Html, CSS, JavaScript featuring a sleek UI for browsing movies and TV shows, with filtering and search functionality.",
-    tags: ["Html", "CSS", "JavaScript"],
+      "A fitness landing page designed to showcase workout plans, trainers, and health tips. Converted from Photoshop to HTML, using HTML and CSS.",
+    tags: ["HTML", "CSS", "Photoshop to HTML"],
+    link: "https://fitness-website-coral.vercel.app",
+    features: [
+      "Trainer profiles and workout plans",
+      "Optimized for performance",
+      "Mobile-friendly layout",
+      "Smooth scrolling and animations",
+    ],
+  },
+  
+  {
+    title: "MovieFlix",
+    image: movieFlixImage,
+    description:
+      "A Netflix clone built with HTML, CSS, JavaScript featuring a sleek UI for browsing movies and TV shows, with filtering and search functionality.",
+    tags: ["HTML", "CSS", "JavaScript"],
     link: "https://movieflix-io.vercel.app",
+    features: [
+      "Netflix-like UI",
+      "Movie search and filtering",
+      "Smooth transitions and animations",
+      "Responsive and mobile-friendly",
+    ],
   },
   {
     title: "BlueRex",
     image: BlueRexWebsiteImage,
     description:
       "A modern landing page for BlueRex, featuring sleek animations, a responsive layout, and engaging content. Built with HTML, CSS, and JavaScript.",
-    tags: ["HTML", "CSS", "JavaScript" , "Photoshop to HTML"],
+    tags: ["HTML", "CSS", "JavaScript", "Photoshop to HTML"],
     link: "https://bluerex-io.vercel.app",
+    features: [
+      "Modern and engaging animations",
+      "Fully responsive layout",
+      "SEO-optimized structure",
+      "Interactive elements",
+    ],
   },
 ];
+
+
 
 
 

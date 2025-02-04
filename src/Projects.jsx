@@ -1,141 +1,141 @@
 import React, { useState, useEffect } from "react";
-import { Helmet } from "react-helmet";
-import { motion } from "framer-motion";
-import { projects } from "./constant/constant";
+import { CircleCheckBig, Globe, Eye } from "lucide-react";
+import { projects } from "./constant/constant"; // Import project data
 
-// Define motion variants for project cards
-const cardVariants = {
-  hidden: { opacity: 10, y: 30 },
-  visible: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: index * 0.1, duration: 0.5, ease: "easeOut" },
-  }),
-};
-
-const Work = () => {
-  // Simulate loading state
-  const [isLoading, setIsLoading] = useState(true);
+export default function Work() {
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1500); 
-    return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);     
+    // Simulate loading of data
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the time to simulate a loading delay
   }, []);
 
   return (
-    <main className="overflow-x-hidden">
-      <Helmet>
-        <title>Work | Dhananjay Shahane</title>
-      </Helmet>
-      <div className="receptacle space-y-5 max-w-7xl mx-auto p-3">
-        <h1 className="text-center font-epilogue text-4xl font-bold text-neutral-900 md:text-5xl">
-          Works
-        </h1>
+    <main className="max-w-6xl mx-auto">
+      <div className="container mx-auto px-4 py-4">
+        {loading
+          ? // Show skeleton loader while loading
+            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">
+              <SkeletonCard />
+              <SkeletonCard />
+              <SkeletonCard />
+              <SkeletonCard />
+              <SkeletonCard />
+              <SkeletonCard />
+            </div>
+          : // Once data is loaded, map through the projects
+            projects.map((item, index) => (
+              <div key={index} className="container mx-auto px-4 py-4 my-3 border-2 rounded-lg shadow-md">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">{item.title}</h1>
+                <p className="text-sm md:text-xl max-w-6xl mb-4 text-gray-500">{item.description}</p>
 
-        {/* Skeleton Loader Animation */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3"
-        >
-          {isLoading
-            ? [1, 2, 3 ,4 ,5, 6].map((skeleton, index) => (
-                <motion.div
-                  key={index}
-                  className="relative h-full w-full overflow-hidden rounded-2xl shadow-sm bg-gray-100 p-3 md:p-5"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  {/* Skeleton content */}
-                  <div className="animate-pulse space-y-5">
-                    <div className="h-48 bg-gray-300 rounded-xl"></div>
-                    <div className="space-y-3">
-                      <div className="h-6 bg-gray-300 rounded w-3/4"></div>
-                      <div className="h-4 bg-gray-300 rounded w-1/2"></div>
-                      <div className="h-3 bg-gray-300 rounded w-2/3"></div>
-                      <div className="h-6 bg-gray-300 rounded w-1/4"></div>
-                    </div>
+                {/* Conditional Layout */}
+                <div className={`grid gap-8 md:grid-cols-2`}>
+                  <ImageSection image={item.image} />
+                  <div className="space-y-4">
+                    <FeatureList features={item.features} />
+                    <TagList tags={item.tags} />
+                    <ProjectButtons link={item.link} />
                   </div>
-                </motion.div>
-              ))
-            : projects.map((project, index) => (
-                <motion.a
-                  href={project.link}
-                  key={index}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative block h-full w-full p-0 sm:p-2.5"
-                  custom={index}
-                  variants={cardVariants}
-                >
-                  <div className="relative h-full w-full overflow-hidden rounded-2xl  bg-gray-100 p-3 md:p-5">
-                    <div className="relative space-y-5">
-                      <div className="relative">
-                        <img
-                          alt="Project"
-                          loading="lazy"
-                          width="800"
-                          height="500"
-                          decoding="async"
-                          className="h-full rounded-xl object-cover shadow-xl"
-                          srcSet={project.image}
-                          src={project.image}
-                        />
-                      </div>
-                      <div className="space-y-5">
-                        <div className="flex items-center justify-between text-neutral-900">
-                          <div className="space-y-1">
-                            <h1 className="font-epilogue text-xl font-semibold md:text-3xl">
-                              {project.title}
-                            </h1>
-                          </div>
-                          <svg
-                            stroke="currentColor"
-                            fill="none"
-                            strokeWidth="2"
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
-                            className="text-2xl"
-                            height="1em"
-                            width="1em"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                            ></path>
-                          </svg>
-                        </div>
-                        <p className="line-clamp-3 text-sm text-neutral-500 md:text-lg">
-                          {project.description}
-                        </p>
-                        <div className="grid grid-cols-2 gap-2.5 lg:flex">
-                          {project.tags.map((tag, tagIndex) => (
-                            <div
-                              key={tagIndex}
-                              className="rounded-full bg-neutral-900 px-3 py-1 text-xs text-white"
-                            >
-                              {tag}
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.a>
-              ))}
-        </motion.div>
+                </div>
+              </div>
+            ))}
       </div>
     </main>
   );
-};
+}
 
-export default Work;
+// Skeleton Loader Card (Improved Design with Grid Layout)
+function SkeletonCard() {
+  return (
+    <div className="animate-pulse p-4 bg-gray-200 rounded-lg shadow-md">
+      {/* Skeleton for Title */}
+      <div className="h-8 w-3/4 bg-gray-300 rounded-md mb-4"></div>
+      {/* Skeleton for Description */}
+      <div className="h-4 w-1/2 bg-gray-300 rounded-md mb-4"></div>
+      {/* Skeleton for Image */}
+      <div className="h-48 bg-gray-300 rounded-md mb-4"></div>
+      {/* Skeleton for Tags */}
+      <div className="flex gap-2 mb-4">
+        <div className="h-5 w-20 bg-gray-300 rounded-md"></div>
+        <div className="h-5 w-20 bg-gray-300 rounded-md"></div>
+      </div>
+      {/* Skeleton for Buttons */}
+      <div className="flex gap-4 mt-4">
+        <div className="h-10 w-28 bg-gray-300 rounded-md"></div>
+        <div className="h-10 w-28 bg-gray-300 rounded-md"></div>
+      </div>
+    </div>
+  );
+}
+
+function FeatureList({ features }) {
+  return (
+    <ul className="space-y-2">
+      {features.map((feature, index) => (
+        <li key={index} className="flex items-center gap-2">
+          <CircleCheckBig className="h-5 w-5 text-green-500 bg-green-200 rounded-full  shrink-0" />
+          <span>{feature}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function TagList({ tags }) {
+  return (
+    <div className="flex flex-wrap gap-2 mt-2">
+      {tags.map((tag, index) => (
+        <span
+          key={index}
+          className="bg-gray-300 text-gray-700 text-xs px-3 py-1 rounded-full"
+        >
+          {tag}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function ProjectButtons({ link }) {
+  return (
+    <div className="flex gap-4 mt-4">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 border border-gray-700 text-gray-700 px-4 py-2 rounded-lg transition hover:bg-gray-900 hover:text-white hover:scale-105"
+      >
+        <Globe className="h-5 w-5" />
+        <span className="hidden md:block">Visit Website</span>
+      </a>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 border border-gray-700 text-gray-700 px-4 py-2 rounded-lg transition hover:bg-gray-900 hover:text-white hover:scale-105"
+      >
+        <Eye className="h-5 w-5" />
+        <span className="hidden md:block">
+          Live Preview
+        </span>
+      </a>
+    </div>
+  );
+}
+
+function ImageSection({ image }) {
+  return (
+    <div>
+      <div className="relative overflow-hidden rounded-lg shadow-2xl shadow-neutral-400">
+        <img
+          src={image}
+          alt="Project Preview"
+          className="object-cover w-full h-auto rounded-lg"
+        />
+      </div>
+    </div>
+  );
+}
