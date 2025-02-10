@@ -45,12 +45,6 @@ function Header() {
         <div className="mx-auto hidden w-full md:col-span-6 md:block xl:w-1/3">
           <MarqueeLink />
         </div>
-        {/* <button
-             onClick={() => setIsOpen(true)}
-              className="text-3xl cursor-pointer"
-            >
-              🌈
-        </button> */}
         <div className="flex items-center">
           <div className="outer-menu ml-4">
             <input

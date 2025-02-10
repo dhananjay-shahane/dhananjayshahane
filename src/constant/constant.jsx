@@ -13,7 +13,7 @@ export const projects = [
     image: restaurantWebsiteImage,
     description:
       "A restaurant landing page with features like menu browsing, cart management, online ordering, and payment integration with Stripe. Built using React.js, Tailwind CSS, and Redux for state management.",
-    tags: ["React.js", "Tailwind CSS", "Redux", "Stripe Payment Integration"],
+    tags: ["React.js", "Tailwind CSS", "Redux", "Stripe"],
     link: "https://final-project-dun-iota.vercel.app",
     features: [
       "Dynamic menu browsing",
@@ -29,7 +29,7 @@ export const projects = [
     image: restaurantAdminPanelImage, // Add image for the admin panel here
     description:
       "An admin panel to manage orders, add food items, create categories, and manage payments. Built using Node.js, Express, MongoDB for the backend, and React.js with Tailwind CSS for the frontend.",
-    tags: ["MongoDB", "Node.js", "Express", "React.js", "Tailwind CSS"],
+    tags: ["MongoDB", "Node.js", "Express", "React.js"],
     link: "https://fresh-food-mu.vercel.app", // Add actual link for the admin panel
     features: [
       "Manage orders and track status",

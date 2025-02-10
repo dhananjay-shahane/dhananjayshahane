@@ -1,4 +1,63 @@
+import { useState, useEffect } from "react";
+
 const DevDetails = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 5000);
+    return () => clearTimeout(timer);
+  }, []);
+  if (isLoading) {
+    return (
+      <div className="py-10 md:py-20 lg:py-28 max-w-7xl mx-auto p-5">
+        <div className="receptacle space-y-10">
+          {/* Heading Skeleton */}
+          <div className="space-y-2.5">
+            <div className="h-10 bg-gray-200 rounded w-3/4 animate-pulse md:h-14"></div>
+            <div className="h-6 bg-gray-200 rounded w-2/3 animate-pulse md:h-7"></div>
+          </div>
+
+          {/* Grid Skeleton */}
+          <div className="grid w-full auto-rows-[20rem] grid-cols-1 gap-5 md:grid-cols-12">
+            {/* Project Highlights Skeleton */}
+            <div className="relative flex flex-col justify-between overflow-hidden rounded-2xl bg-gray-100 md:col-span-6 lg:col-span-8 animate-pulse">
+              <div className="absolute inset-0 bg-gray-200 opacity-20"></div>
+              <div className="z-10 flex flex-col gap-4 p-5">
+                <div className="h-10 w-10 bg-gray-300 rounded-lg"></div>
+                <div className="space-y-3">
+                  <div className="h-8 bg-gray-300 rounded w-2/5"></div>
+                  <div className="h-4 bg-gray-300 rounded w-full"></div>
+                  <div className="h-4 bg-gray-300 rounded w-4/5"></div>
+                  <div className="h-4 bg-gray-300 rounded w-3/4"></div>
+                </div>
+              </div>
+              <div className="absolute bottom-0 w-full p-5">
+                <div className="h-12 bg-gray-300 rounded-lg"></div>
+              </div>
+            </div>
+
+            {/* Technologies Skeleton */}
+            <div className="relative flex flex-col justify-between overflow-hidden rounded-2xl bg-gray-100 md:col-span-6 lg:col-span-4 animate-pulse">
+              <div className="z-10 flex flex-col gap-4 p-5">
+                <div className="h-10 w-10 bg-gray-300 rounded-lg"></div>
+                <div className="space-y-3">
+                  <div className="h-8 bg-gray-300 rounded w-2/5"></div>
+                  <div className="h-4 bg-gray-300 rounded w-full"></div>
+                  <div className="h-4 bg-gray-300 rounded w-4/5"></div>
+                  <div className="h-4 bg-gray-300 rounded w-3/4"></div>
+                </div>
+              </div>
+              <div className="absolute bottom-0 w-full p-5">
+                <div className="h-12 bg-gray-300 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="py-10 md:py-20 lg:py-28 max-w-7xl mx-auto p-5">
       <div className="receptacle space-y-10">

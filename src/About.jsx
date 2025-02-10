@@ -1,11 +1,61 @@
 import Experience from "./components/Experience";
 import superHero from "../src/assets/img/super-hero.jpeg"
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 import { Helmet } from 'react-helmet';
 const About = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+
+  if (isLoading) {
+    return (
+      <main className="overflow-x-hidden p-4">
+        <Helmet>
+          <title>About | Dhananjay Shahane</title>
+        </Helmet>
+
+        <div className="wrapper space-y-5 py-10 md:py-28 max-w-7xl mx-auto">
+          <div className="grid h-full gap-5 md:grid-cols-12 md:gap-10">
+            {/* Left Column Skeleton */}
+            <div className="flex flex-col items-start justify-center space-y-2.5 md:col-span-8">
+              {/* Headline Skeleton */}
+              <div className="mb-3 h-26 w-full bg-gray-200 rounded-xl animate-pulse md:h-36"></div>
+
+              {/* Grid Skeleton */}
+              <div className="w-full space-y-2.5">
+                <div className="grid grid-cols-1 gap-2.5 md:grid-cols-12">
+                  <div className="row-span-2 h-32 bg-gray-200 rounded-xl animate-pulse lg:col-span-9"></div>
+                  <div className="row-span-2 h-32 bg-gray-200 rounded-xl animate-pulse lg:col-span-3"></div>
+                </div>
+              </div>
+
+              {/* Stats Grid Skeleton */}
+              <div className="w-full space-y-2.5">
+                <div className="grid grid-cols-1 gap-2.5 md:grid-cols-12">
+                  <div className="row-span-2 h-32 bg-gray-200 rounded-xl animate-pulse lg:col-span-6"></div>
+                  <div className="row-span-4 h-64 bg-gray-200 rounded-xl animate-pulse lg:col-span-6"></div>
+                  <div className="row-span-2 h-32 bg-gray-200 rounded-xl animate-pulse lg:col-span-3"></div>
+                  <div className="row-span-2 h-32 bg-gray-200 rounded-xl animate-pulse lg:col-span-3"></div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column Skeleton (Image) */}
+            <div className="bg-gray-200 rounded-xl animate-pulse md:col-span-4"></div>
+          </div>
+        </div>
+      </main>
+    );
+  }
+
   return (
-    
     <main className="overflow-x-hidden p-4">
       <Helmet>
         <title>About | Dhananjay Shahane</title>
@@ -15,7 +65,7 @@ const About = () => {
         <div className="grid h-full gap-5 md:grid-cols-12 md:gap-10">
           <div className="flex flex-col items-start justify-center space-y-2.5 md:col-span-8">
             <h1 className="headline mb-3 text-start font-epilogue text-2xl font-bold text-neutral-900 md:text-5xl">
-            By Day a Front End Developer, By Night a Superhero — Here I Am!
+              By Day a Front End Developer, By Night a Superhero — Here I Am!
             </h1>
             <div className="grid grid-cols-1 gap-2.5 md:grid-cols-12">
               <div className="rounded-xl bg-gray-100 p-2.5 md:col-span-12 md:p-5">
@@ -52,7 +102,7 @@ const About = () => {
                     Location: Ahmedabad, Gujarat, India
                   </h3>
                   <div className="absolute bottom-[-30%] right-0 mx-auto aspect-square sm:h-[200%] md:h-[150%] lg:bottom-[-50%] lg:right-[-20%] [@media(max-width:640px)]:h-[140px]">
-                    
+
                   </div>
                 </div>
                 <div className="relative row-span-2 overflow-hidden rounded-xl bg-gray-100 p-2.5 md:p-5 lg:col-span-3">
