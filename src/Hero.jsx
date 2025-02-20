@@ -14,8 +14,8 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="flex justify-center text-center mb-5 md:mb-0 px-5">
-          <div className="">
+        <div className="flex justify-center text-center  mb-5 md:mb-0 px-5">
+          <div className="flex flex-col">
             <h1 className="font-epilogue text-xl text-neutral-900 md:text-3xl">
                 Hi{" "}
                 <motion.span
@@ -29,7 +29,7 @@ const Hero = () => {
               </h1>
               <div className="flex select-none justify-center overflow-hidden gap-3">
               <motion.h1
-                className="relative inline-flex text-center font-epilogue text-4xl font-bold text-neutral-900 md:text-7xl"
+                className="relative inline-flex text-center font-epilogue text-4xl font-bold text-neutral-900 md:text-7xl mb-2"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}

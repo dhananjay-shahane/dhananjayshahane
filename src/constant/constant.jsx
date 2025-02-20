@@ -5,9 +5,45 @@ import restaurantWebsiteImage from "../assets/img/freshfood.png";
 import restaurantAdminPanelImage from "../assets/img/food-admin.png"
 import movieFlixImage from "../assets/img/movieflix.png";
 import jadooTravelImage from "../assets/img/jadoo-travel.png";
+import eqaayaImage from "../assets/img/eqaaya-website.png";
+import grinWebsiteImage from "../assets/img/grin-website.png"
 
 // project details
 export const projects = [
+  {
+    title: "NOVA",
+    image: grinWebsiteImage,
+    description:
+      "A modern and dynamic landing page for NOVA, an influencer marketing software platform. Built with Next.js for server-side rendering, shadcn for UI components, Tailwind CSS for styling, and motion animations for a smooth and engaging user experience.",
+    tags: ["Next.js", "shadcn", "Tailwind CSS", "Motion"],
+    link: "https://nova-website-showcase.vercel.app/",
+    features: [
+      "Dynamic and interactive UI with motion animations",
+      "Built with Next.js for fast performance and SEO optimization",
+      "shadcn components for a sleek and modern design",
+      "Fully responsive and mobile-friendly layout",
+      "Tailwind CSS for rapid and customizable styling",
+      "Engaging animations for a polished user experience",
+      "SEO-friendly structure for better visibility",
+    ],
+  },
+  {
+    title: "Eqaaya",
+    image: eqaayaImage,
+    description:
+      "A WordPress-based e-commerce website for Eqaaya, specializing in showcasing and selling handmade handicraft products. Built with WordPress, WooCommerce, and custom themes for a seamless shopping experience.",
+    tags: ["WordPress", "WooCommerce", "Custom Theme"],
+    link: "https://eqaaya.com/",
+    features: [
+      "Handicraft product showcase with categories",
+      "WooCommerce integration for e-commerce functionality",
+      "Custom WordPress theme for unique design",
+      "Fully responsive and mobile-friendly",
+      "SEO-optimized for better search engine visibility",
+      "User-friendly admin panel for easy product management",
+      "Secure payment gateway integration",
+    ],
+  },
   {
     title: "FreshFood",
     image: restaurantWebsiteImage,
@@ -26,17 +62,31 @@ export const projects = [
   },
   {
     title: "FreshFood Admin Panel",
-    image: restaurantAdminPanelImage, // Add image for the admin panel here
+    image: restaurantAdminPanelImage,
     description:
       "An admin panel to manage orders, add food items, create categories, and manage payments. Built using Node.js, Express, MongoDB for the backend, and React.js with Tailwind CSS for the frontend.",
     tags: ["MongoDB", "Node.js", "Express", "React.js"],
-    link: "https://fresh-food-mu.vercel.app", // Add actual link for the admin panel
+    link: "https://fresh-food-mu.vercel.app",
     features: [
       "Manage orders and track status",
       "Add food items and categories",
       "Payment management and order history",
       "Real-time updates with Redux",
       "Fully responsive and mobile-friendly UI",
+    ],
+  },
+  {
+    title: "MovieFlix",
+    image: movieFlixImage,
+    description:
+      "A Netflix clone built with HTML, CSS, JavaScript featuring a sleek UI for browsing movies and TV shows, with filtering and search functionality.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://movieflix-io.vercel.app",
+    features: [
+      "Netflix-like UI",
+      "Movie search and filtering",
+      "Smooth transitions and animations",
+      "Responsive and mobile-friendly",
     ],
   },
   {
@@ -82,34 +132,7 @@ export const projects = [
     ],
   },
   
-  {
-    title: "MovieFlix",
-    image: movieFlixImage,
-    description:
-      "A Netflix clone built with HTML, CSS, JavaScript featuring a sleek UI for browsing movies and TV shows, with filtering and search functionality.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://movieflix-io.vercel.app",
-    features: [
-      "Netflix-like UI",
-      "Movie search and filtering",
-      "Smooth transitions and animations",
-      "Responsive and mobile-friendly",
-    ],
-  },
-  {
-    title: "BlueRex",
-    image: BlueRexWebsiteImage,
-    description:
-      "A modern landing page for BlueRex, featuring sleek animations, a responsive layout, and engaging content. Built with HTML, CSS, and JavaScript.",
-    tags: ["HTML", "CSS", "JavaScript", "Photoshop to HTML"],
-    link: "https://bluerex-io.vercel.app",
-    features: [
-      "Modern and engaging animations",
-      "Fully responsive layout",
-      "SEO-optimized structure",
-      "Interactive elements",
-    ],
-  },
+  
 ];
 
 
