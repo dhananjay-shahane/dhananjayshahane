@@ -17,7 +17,7 @@ const SkillsSection = () => {
             </h1>
             <div className="max-w-4xl space-y-5">
               <p className="text-base font-normal text-neutral-600 md:text-xl">
-                Unlike many freelance software engineers, I approach your project as a distinct opportunity rather than just another task on my list.
+               I approach your project as a distinct opportunity rather than just another task on my list.
               </p>
               <p className="text-base font-normal text-neutral-600 md:text-xl">
                 My expertise spans design, management, creative direction, and development. Throughout my projects, I’ve learned that effective workflows, transparent communication, and self-discipline are vital for success.

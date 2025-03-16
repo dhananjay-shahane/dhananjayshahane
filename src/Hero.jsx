@@ -43,7 +43,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-             UI Developer and Freelancer specializing in React.js, Tailwind CSS I am passionate about solving complex challenges and transforming them into user-friendly, visually appealing digital experiences. With a focus on responsive web design and seamless interactions, I partner with startups and businesses globally to build innovative websites and applications that boost user engagement, drive growth, and give them a competitive edge in the market.
+             UI Developer specializing in React.js, Tailwind CSS I am passionate about solving complex challenges and transforming them into user-friendly, visually appealing digital experiences. With a focus on responsive web design and seamless interactions, I partner with startups and businesses globally to build innovative websites and applications that boost user engagement, drive growth, and give them a competitive edge in the market.
             </motion.p>
               
             <div className="flex justify-center">

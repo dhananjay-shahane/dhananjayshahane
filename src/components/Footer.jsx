@@ -96,10 +96,12 @@ const Footer = () => {
             </div>
           </div>
           <blockquote className="relative flex w-full flex-col justify-start text-start lg:col-span-5">
-            <p className="mb-14 text-start quotes-text font-caveat text-5xl text-neutral-900 md:mb-8 md:text-xl">
-              {quote.text} <br />
-              <span className="text-neutral-500 text-3xl">— {quote.author}</span>
+
+            <p className="mb-14 text-start quotes-text font-caveat text-5xl text-neutral-900 md:mb-8 mt-4 md:text-xl">
+              {quote.text}
+              
             </p>
+            <span className="text-neutral-500 text-3xl md:text-xl">— {quote.author}</span>
           </blockquote>
         </div>
         <div className="footer_footerWrapper text-center py-5">

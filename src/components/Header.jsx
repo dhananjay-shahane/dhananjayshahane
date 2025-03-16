@@ -42,9 +42,9 @@ function Header() {
         <Link className="logo" to="/" style={logostyle}>
           Dhananjay <br />
         </Link>
-        <div className="mx-auto hidden w-full md:col-span-6 md:block xl:w-1/3">
+        {/* <div className="mx-auto hidden w-full md:col-span-6 md:block xl:w-1/3">
           <MarqueeLink />
-        </div>
+        </div> */}
         <div className="flex items-center">
           <div className="outer-menu ml-4">
             <input
