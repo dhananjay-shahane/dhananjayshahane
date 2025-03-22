@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dhananjayshahane.vercel.app/sitemap.xml

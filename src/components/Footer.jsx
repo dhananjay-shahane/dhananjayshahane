@@ -54,7 +54,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white relative"  style={footerStyle}>
+    <footer className="bg-white relative" style={footerStyle}>
       <div className="max-w-7xl mx-auto px-3">
         <div className="grid grid-cols-1 gap-10 pb-10 md:pb-20 pt-5 lg:grid-cols-12 lg:gap-5">
           <div className="flex flex-col items-start justify-center space-y-5 text-center lg:col-span-7 lg:text-start">
@@ -99,7 +99,7 @@ const Footer = () => {
 
             <p className="mb-14 text-start quotes-text font-caveat text-5xl text-neutral-900 md:mb-8 mt-4 md:text-xl">
               {quote.text}
-              
+
             </p>
             <span className="text-neutral-500 text-3xl md:text-xl">— {quote.author}</span>
           </blockquote>
