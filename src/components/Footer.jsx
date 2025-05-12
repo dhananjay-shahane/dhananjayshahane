@@ -101,7 +101,7 @@ const Footer = () => {
               {quote.text}
 
             </p>
-            <span className="text-neutral-500 text-3xl md:text-xl">— {quote.author}</span>
+            <span className="text-neutral-500 text-sm md:text-xl">— {quote.author}</span>
           </blockquote>
         </div>
         <div className="footer_footerWrapper text-center py-5">
