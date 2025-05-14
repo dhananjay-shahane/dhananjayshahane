@@ -7,12 +7,20 @@ import { FaEye } from "react-icons/fa";
 const Work = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [selectedProject, setSelectedProject] = useState(null);
-  const displayProject = projects.slice(0, 3);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 4000);
     return () => clearTimeout(timer);
   }, []);
+
+   const visibleProjects = projects.filter((project) => {
+      if (project.noIndex && typeof window === "undefined") return false;
+      return true;
+   });
+
+   const displayProject = visibleProjects.slice(0, 3);
+
+
 
   // Animation variants
   const cardVariants = {

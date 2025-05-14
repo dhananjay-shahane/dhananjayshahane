@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import ErrorPage from "./ErrorPage";
 
 
+
 // Lazy-load components with delay
 const Home = React.lazy(() => import("./Home")); // 3s delay
 const About = React.lazy(() => import("./About")); // 2s delay

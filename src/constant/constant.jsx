@@ -28,6 +28,7 @@ export const projects = [
       "Engaging animations for a polished user experience",
       "SEO-friendly structure for better visibility",
     ],
+    noIndex: true,
   },
   {
     title: "Eqaaya",
@@ -45,6 +46,7 @@ export const projects = [
       "User-friendly admin panel for easy product management",
       "Secure payment gateway integration",
     ],
+     noIndex: false,
   },
   {
     title: "Ananta Ecomgrowth",
@@ -57,6 +59,7 @@ export const projects = [
       "Payment integration with Razorpay",
       "Optimized for mobile and tablet users",
     ],
+    noIndex: true,
   },
   {
     title: "SkylineCall",
@@ -68,6 +71,7 @@ export const projects = [
     features: [
       "Fully responsive and mobile-friendly UI",
     ],
+    noIndex: true,
   },
   {
     title: "Colors Website",
