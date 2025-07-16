@@ -7,9 +7,8 @@ import { Helmet } from 'react-helmet';
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2000);
+    const timer = setTimeout(() => setIsLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -127,7 +126,7 @@ const About = () => {
             </div>
           </div>
           <div className="group overflow-hidden rounded-xl md:col-span-4">
-            <img alt="About Me" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" srcSet={superHero} src={superHero} />
+            <img alt="About Me" loading="lazy" width="300" height="500" decoding="async" data-nimg="1" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" src={'https://cdn.prod.website-files.com/63957415c9d3c7c02d068332/67e59106600b2658f5ba6de5_Chris.avif'} />
           </div>
         </div>
       </div>
